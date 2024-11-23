@@ -76,7 +76,7 @@ function Footer() {
                     <span>TOP</span>
                 </div>
                 <div className='WhatApp'>
-                    <a href="https://wa.link/dbq5rc" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.link/tn6193" target="_blank" rel="noopener noreferrer">
                         <img src={whatappIcon} alt='whatappIcon' className='whatappIcon' />
                     </a>
                 </div>

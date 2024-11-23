@@ -27,7 +27,7 @@ import RentingVsBuyingCalculator from "./pages/RentingVsBuyingCalculator/renting
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/ezymtg">
+      <BrowserRouter basename="/EZY_Mortgage">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -53,6 +53,33 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+
+
+
+      {/* <Header />
+      <Home />
+      <PaperWork />
+      <QuickQuote />
+      <AffordabilityCalculator />
+      <MonthlyPaymentMortgageCalculator />
+      <FHA />
+      <VALoans />
+      <Purchase />
+      <Refinancing />
+      <CashOutRefinance />
+      <RefinanceAnalysisCalculator />
+      <DebtConsolidationCalculator />
+      <RentingVsBuyingCalculator />
+      <FhaVaStreamline />
+      <TheLoanProcess />
+      <GetInformativeFreeReports />
+      <GlossaryOfMortgageTerms />
+      <AboutUs />
+      <MeetOurStaff />
+      <ContactUs />
+      <Footer /> */}
+
+
     </div>
   );
 }
