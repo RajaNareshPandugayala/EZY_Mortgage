@@ -246,14 +246,16 @@ body {
 }
 
 .LoanOption,
-.Resource {
+.Resource,
+.Resource Link {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
 .LoanOption:hover,
-.Resource:hover {
+.Resource:hover,
+.Resource Link:hover {
   text-decoration: underline;
 }
 
@@ -653,18 +655,22 @@ body {
   justify-content: center;
   background-color: white;
   z-index: 950;
-  background-image: url(./PicesForPages/images.jpg);
+  background-image: url(./PicesForPages/Purchasing.jpg);
   background-position: center;
+  background-position-y: 70%;
   background-repeat: no-repeat;
   background-size: cover;
+  text-shadow: 1px 1px 2px black;
 }
 
 .purchasingBoxParent00 {
   background-image: url(./PicesForPages/istockphoto-1285465265-612x612.jpg);
+  background-position-y: 20%;
 }
 
 .purchasingBoxParent01 {
   background-image: url(./PicesForPages/happy-young-family-with-kids-at-home-father-mother-daughter-and-son-playing-on-the-floor-in-living-room-mom-dad-little-boy-and-girl-holding-p.jpg);
+  background-position-y: 85%;
 }
 
 .purchasingBox {
@@ -707,6 +713,7 @@ body {
   font-weight: bold;
   padding: 15px 35px;
   margin-top: 50px;
+  box-sizing: 1px 1px 0px 5px black;
 }
 
 .purchasingButton:hover {
@@ -2055,6 +2062,30 @@ input[type="range"]::-moz-range-thumb {
 
 /******************************RVBCalculator-End***********************************/
 
+/******************************ADA_Statement-Start***********************************/
+
+
+.ADA_StatementImage {
+  top: 95%;
+}
+
+/******************************ADA_Statement-End***********************************/
+
+/******************************PrivacyPolicy-Start***********************************/
+
+.PrivacyPolicyImage {
+  top: 80%;
+}
+
+/******************************PrivacyPolicy-End***********************************/
+
+/******************************RightLoanForYou-Start***********************************/
+
+.RightLoanImage {
+  top: 75%;
+}
+
+/******************************RightLoanForYou-End***********************************/
 
 /*   width: 100%;
   display: flex;

@@ -17,7 +17,7 @@ function ContactUs() {
                     <div className='purchaseBottomLeftBox contactUsBottomLeftBox'>
                         <span className='purchaseBottomLeftHeader'>Get In Touch</span>
                         <span className='purchaseBottomLeftContent contactUsBottomLeftContent'><span>Phone: </span><span>(___) ___-____ </span></span>
-                        <span className='purchaseBottomLeftContent contactUsBottomLeftContent'><span>Email: </span><span>info@primehome.com </span></span>
+                        <a href="mailto: sri@ezymtg.com" style={{ textDecoration: 'none' }} className='purchaseBottomLeftContent contactUsBottomLeftContent'><span>Email: </span><span>sri@ezymtg.com</span></a>
                         <span className='purchaseBottomLeftContent contactUsBottomLeftContent'><span>Address: </span><span>#### --------- ---, -------- #### <br />-------, -- #####</span></span>
 
                     </div>

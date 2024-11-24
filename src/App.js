@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './Elements/ScrollToTop/scroll_top';
 
 import './App.css';
 import Header from './Elements/Header/header';
@@ -23,11 +24,17 @@ import MeetOurStaff from "./pages/MeetOurStaff/our-staff";
 import RefinanceAnalysisCalculator from "./pages/RefinanceAnalysisCalculator/refinance-analysis-calculator";
 import DebtConsolidationCalculator from "./pages/ConsolidationCalculator/debt-consolidation-calculator";
 import RentingVsBuyingCalculator from "./pages/RentingVsBuyingCalculator/renting-versus-buying-calculator";
+import AdaAccessibilityStatement from './pages/adaAccessibilityStatement/ada-accessibility-statement';
+import PrivacyPolicyStatement from './pages/PrivacyStatement/privacy-policy';
+import TestimonialsReview from './pages/TestimonialReview/testimonials';
+import RightLoanForYou from './pages/WhichLoanIsRightForYou/which-loan-is-right-for-me';
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/EZY_Mortgage">
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,6 +57,10 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-staff" element={<MeetOurStaff />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/testimonials" element={<TestimonialsReview />} />
+          <Route path="/which-loan-is-right-for-me" element={<RightLoanForYou />} />
+          <Route path="/ada-accessibility-statement" element={<AdaAccessibilityStatement />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyStatement />} />
         </Routes>
         <Footer />
       </BrowserRouter>

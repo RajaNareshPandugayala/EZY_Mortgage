@@ -2,6 +2,8 @@ import React from 'react'
 import housingIcon from '../../PicesForPages/equal-housing-opportunity-logo-100-w.png'
 import whatappIcon from '../../PicesForPages/WhatsappIcon.png'
 import Logo from '../../PicesForPages/LogoEZYmtg.png'
+import { Link } from 'react-router-dom'
+
 
 
 function Footer() {
@@ -31,7 +33,7 @@ function Footer() {
                             <span className='footerTopDivHeading'>Contact Us</span>
                             <span className='footerTopDivContent footerTopDivContent00'>
                                 <span className='footerTopDivContentIcon'><i class="ri-map-pin-line"></i> <span>#### --------- ---, -------- #### -------, -- #####</span></span>
-                                <a href="tel:+1-980-342-5726" className="aTag_Tel footerTopDivContentIcon"><i class="ri-phone-fill"></i> <span>(513)-999-2324</span></a>
+                                <a href="tel:+1-513-999-2324" className="aTag_Tel footerTopDivContentIcon"><i class="ri-phone-fill"></i> <span>(513)-999-2324</span></a>
                                 <a href="mailto: sri@ezymtg.com" className="aTag_Mail footerTopDivContentIcon"><i class="ri-mail-send-fill"></i> <span>sri@ezymtg.com</span></a>
                             </span>
                         </span>
@@ -39,25 +41,25 @@ function Footer() {
                     <div className='footerTopDiv'>
                         <span className='footerTopDivHeading'>Loan Options</span>
                         <span className='footerTopDivContent footerTopDivContent00'>
-                            <a href="/" className="LoanOption LoanOption01">Fixed Rate Mortgage</a>
-                            <a href="/" className="LoanOption LoanOption02">FHA Home Loan</a>
-                            <a href="/" className="LoanOption LoanOption03">VA Home Loan</a>
-                            <a href="/" className="LoanOption LoanOption04">Jumbo Home Loan</a>
-                            <a href="/" className="LoanOption LoanOption05">First Time Home Buyer</a>
-                            <a href="/" className="LoanOption LoanOption06">Investment Property Loans</a>
-                            <a href="/" className="LoanOption LoanOption07">Refinance</a>
+                            <Link to="/which-loan-is-right-for-me" className="LoanOption LoanOption01">Fixed Rate Mortgage</Link>
+                            <Link to="/fha" className="LoanOption LoanOption02">FHA Home Loan</Link>
+                            <Link to="/va-loans" className="LoanOption LoanOption03">VA Home Loan</Link>
+                            <Link to="/which-loan-is-right-for-me" className="LoanOption LoanOption04">Jumbo Home Loan</Link>
+                            <Link to="/which-loan-is-right-for-me" className="LoanOption LoanOption05">First Time Home Buyer</Link>
+                            <Link to="/which-loan-is-right-for-me" className="LoanOption LoanOption06">Investment Property Loans</Link>
+                            <Link to="/refinancing" className="LoanOption LoanOption07">Refinance</Link>
                         </span>
                     </div>
                     <div className='footerTopDiv'>
                         <span className='footerTopDivHeading'>Resources</span>
                         <span className='footerTopDivContent footerTopDivContent00'>
-                            <a href="/" className="Resource Resource01">Contact Us</a>
-                            <a href="/" className="Resource Resource02">Get A Quote</a>
-                            <a href="/" className="Resource Resource04">Apply Online</a>
-                            <a href="/" className="Resource Resource05">Reviews</a>
-                            <a href="/" className="Resource Resource06">NMLS Consumer Access</a>
-                            <a href="/" className="Resource Resource07">ADA Accessibility Statement</a>
-                            <a href="/" className="Resource Resource03">Privacy Policy</a>
+                            <Link to="/contact-us" className="Resource Resource01">Contact Us</Link>
+                            <Link to="quick-quote" className="Resource Resource02">Get A Quote</Link>
+                            <Link className="Resource Resource04">Apply Online</Link>
+                            <Link to="/testimonials" className="Resource Resource05">Reviews</Link>
+                            <Link to="https://www.nmlsconsumeraccess.org/" target='_blank' className="Resource Resource06">NMLS Consumer Access</Link>
+                            <Link to="/ada-accessibility-statement" className="Resource Resource07">ADA Accessibility Statement</Link>
+                            <Link to="/privacy-policy" className="Resource Resource03">Privacy Policy</Link>
                         </span>
                     </div>
                 </div>
@@ -76,9 +78,9 @@ function Footer() {
                     <span>TOP</span>
                 </div>
                 <div className='WhatApp'>
-                    <a href="https://wa.link/tn6193" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://wa.link/tn6193" target="_blank" rel="noopener noreferrer">
                         <img src={whatappIcon} alt='whatappIcon' className='whatappIcon' />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
