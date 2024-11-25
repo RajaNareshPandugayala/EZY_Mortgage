@@ -76,16 +76,16 @@ function ShortApplication() {
                 alert("An error occurred while submitting your application.");
             });
 
-        event.preventDefault();
+        // event.preventDefault();
 
-        const { name } = formData;
+        // const { name } = formData;
 
-        setFormData(prevData => ({
-            ...prevData,
-            subject: `Short Application: ${name}`
-        }));
+        // setFormData(prevData => ({
+        //     ...prevData,
+        //     subject: `Short Application: ${name}`
+        // }));
 
-        alert("Your request has been sent successfully!");
+        // alert("Your request has been sent successfully!");
 
         const currentUrl = window.location.href;
         nextRef.current.value = currentUrl;
