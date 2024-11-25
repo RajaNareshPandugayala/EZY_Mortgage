@@ -53,6 +53,7 @@ function ContactForm() {
             .then((response) => {
                 if (response.ok) {
                     alert("Your application has been received successfully, and an email has been sent!");
+                    window.location.reload();
                 } else {
                     alert("There was a problem submitting your application. Please try again.");
                 }
@@ -73,8 +74,8 @@ function ContactForm() {
 
         // alert("Your request has been sent successfully!");
 
-        const currentUrl = window.location.href;
-        nextRef.current.value = currentUrl;
+        // const currentUrl = window.location.href;
+        // nextRef.current.value = currentUrl;
 
         // Submit form manually if desired
         event.target.submit();
