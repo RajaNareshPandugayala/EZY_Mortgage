@@ -15,7 +15,7 @@ function GetInformativeFreeReports() {
             <div className='purchaseBottomParent'>
                 <div className='purchaseBottomBox freeReportsBottomBox'>
                     <div className='purchaseBottomLeftBox'>
-                        <span className='purchaseBottomLeftContent'>At Ram Mortgage, LLC we have compiled these free reports to help you become a better informed consumer.</span>
+                        <span className='purchaseBottomLeftContent'>At EZY Mortgage, LLC we have compiled these free reports to help you become a better informed consumer.</span>
 
                     </div>
                     <FreeReports />

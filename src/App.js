@@ -64,33 +64,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-
-
-
-      {/* <Header />
-      <Home />
-      <PaperWork />
-      <QuickQuote />
-      <AffordabilityCalculator />
-      <MonthlyPaymentMortgageCalculator />
-      <FHA />
-      <VALoans />
-      <Purchase />
-      <Refinancing />
-      <CashOutRefinance />
-      <RefinanceAnalysisCalculator />
-      <DebtConsolidationCalculator />
-      <RentingVsBuyingCalculator />
-      <FhaVaStreamline />
-      <TheLoanProcess />
-      <GetInformativeFreeReports />
-      <GlossaryOfMortgageTerms />
-      <AboutUs />
-      <MeetOurStaff />
-      <ContactUs />
-      <Footer /> */}
-
-
     </div>
   );
 }

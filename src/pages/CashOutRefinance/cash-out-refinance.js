@@ -22,7 +22,7 @@ function CashOutRefinance() {
                         <span className='purchaseBottomLeftContent'>By cashing out on your home, you can obtain cash on the value of your own home to pay off debts or upcoming expenses. The refinance transaction can also provide you with a better mortgage loan interest rate that will save on your monthly mortgage payments during the loan. And it's tax-deductible.</span>
 
                         <span className='purchaseBottomLeftHeader'>How can we help?</span>
-                        <span className='purchaseBottomLeftContent'>If you are looking for this type of refinancing, Ram Mortgage, LLC can find a program suited to your financial needs. We offer cash-out programs for Owner-occupied homes and Non-owner occupied homes, with low, affordable rates.</span>
+                        <span className='purchaseBottomLeftContent'>If you are looking for this type of refinancing, EZY Mortgage, LLC can find a program suited to your financial needs. We offer cash-out programs for Owner-occupied homes and Non-owner occupied homes, with low, affordable rates.</span>
 
                         <div className='purchaseBottomLeftButton'>
                             <span>APPLY NOW!</span>
