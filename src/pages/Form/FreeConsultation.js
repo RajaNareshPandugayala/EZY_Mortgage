@@ -83,7 +83,7 @@ function FreeConsultation() {
         // nextRef.current.value = currentUrl;
 
         // Submit form manually if desired
-        event.target.submit();
+        // event.target.submit();
     }
 
 
