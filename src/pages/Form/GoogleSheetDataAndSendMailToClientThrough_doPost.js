@@ -8,45 +8,77 @@ function doPost(e) {
 
         // Append a new row with the form data
         sheet.appendRow([
+            data.zipCode,
+            data.propertyType,
+            data.firstTimeHomebuyer,
+            data.stageOfTheProcess,
+            data.purchasePrice,
+            data.downPaymentPercent,
+            data.creditScore,
+            data.beforeTaxesAnnualHouseHoldIncome,
+            data.employmentStatus,
+            data.bankruptcy_ShortSale_or_foreclosure_in_the_last_3_years,
+            data.showProofOfIncome,
+            data.working_with_a_real_estate_agent,
+            data.agentName,
+            data.working_with_a_Loan_Officer,
+            data.loanOfficerName,
             data.firstName,
             data.lastName,
             data.email,
-            data.loanOfficer,
-            data.coBorrower,
-            data.eveningPhone,
-            data.workPhone,
-            data.contactPreference,
-            data.creditRating,
-            data.propertyAddress,
-            data.City,
-            data.state,
-            data.zipCode,
-            data.loanPurpose,
-            data.propertyWillBe,
-            data.estimatedValue,
+            data.phone,
+            data._id,
         ]);
 
-        // Send an email notification
-        var subject = "Application Received Successfully";
+        // Read the last row of the sheet to get the submitted data
+        var lastRow = sheet.getLastRow();
+        var rowData = sheet.getRange(lastRow, 1, 1, sheet.getLastColumn()).getValues()[0];
+
+        // Generate an HTML table from the row data
+        var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]; // Assuming headers are in the first row
+        var tableRows = headers.map((header, i) => {
+            return `<tr><td><strong>${header}</strong></td><td>${rowData[i] || ''}</td></tr>`;
+        }).join('');
+
+        var tableHTML = `
+            <table border="1" style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr>
+                        <th style="text-align: left; background-color: yellow;">Field</th>
+                        <th style="text-align: left; background-color: yellow;">Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${tableRows}
+                </tbody>
+            </table>
+        `;
+
+        // Send an email notification with the table to the user's email
+        var subject = "Purchase ChatBot Details Received Successfully";
         var body = `
-    Dear ${data.firstName} ${data.lastName},
+            Dear ${data.firstName} ${data.lastName},
 
-    Your application has been received successfully.
+            Your application has been received successfully.
 
-    Thank you for your submission!
+            Below are the details you submitted:
+        `;
 
-    Best regards,
-    The Team
-    `;
-
-        // Add the image URL for the congratulation image
         var htmlBody = `
-    <p>${body.replace(/\n/g, '<br>')}</p>
-    <img src="https://via.placeholder.com/300?text=Congratulations+or+Successful" alt="Congratulations Image" />
-    `;
+            <p>${body.replace(/\n/g, '<br>')}</p>
+            ${tableHTML}
+            <p>Thank you for your submission! You will be hearing from one of our representatives shortly.</p>
+            <p>Sincerely,</p>
+            <p>EZY Mortgage, LLC</p>
+            <p><a href="https://www.###mtg.com/">https://www.###mtg.com/</a></p>
+            <img src="https://via.placeholder.com/300?text=Congratulations+or+Successful" alt="Congratulations Image" />
+        `;
 
-        // Use GmailApp to send the email
         GmailApp.sendEmail(data.email, subject, body, { htmlBody: htmlBody });
+
+        // Send the same email to your email "rajanaresh.p@gmail.com"
+        var adminEmail = "rajanaresh.p@gmail.com";
+        GmailApp.sendEmail(adminEmail, subject, body, { htmlBody: htmlBody });
 
         // Return a success response
         return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);

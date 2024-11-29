@@ -20,6 +20,8 @@ import thumbsUp from '../../PicesForPages/thumbsUp.png';
 import news from '../../PicesForPages/news.jpg';
 import MortgageCalculator from '../CalculatorAndChart/mortgageCalculator';
 // import calcSmall from '../../PicesForPages/calc-small.jpg';
+import ChatBotPurchase from '../Form/ChatBotPurchase';
+import ChatBotRefinance from '../Form//ChatBotRefinance';
 
 
 
@@ -35,6 +37,7 @@ function Home() {
     const [currentText, setCurrentText] = useState("");
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [activeChatBot, setActiveChatBot] = useState(null); // null, "purchase", or "refinance"
     const typingSpeed = 100;
     const deletingSpeed = 50;
 
@@ -65,25 +68,50 @@ function Home() {
 
     return (
         <div className='homeParent'>
-            {/* <div><i class="ri-home-8-fill"></i>Home Page</div> */}
-            <div className='homePageFirstImage'>
-            </div>
+            <div className='homePageFirstImage'></div>
             <div className='homeHelpYouBoxParent'>
                 <div className='homeHelpYouBox'>
-                    <span className='homeHelpYouHeading'>
-                        <span className='homeHelpYouHeadingLeft'>Let's Help You... </span>
-                        <span className='homeHelpYouHeadingRight'>
+                    {activeChatBot === null && (
+                        <>
+                            <span className='homeHelpYouHeading'>
+                                <span className='homeHelpYouHeadingLeft'>Let's Help You... </span>
+                                <span className='homeHelpYouHeadingRight'>
+                                    <span className="typingText">{currentText}</span>
+                                </span>
+                            </span>
+                            <span className='homeHelpYouContent'>
+                                Whatever your goals are, we are here to help! <br />Click our prequalifier to get started!
+                            </span>
+                            <span className='homeHelpYouButton'>
+                                <button
+                                    className='homeHelpYouButtonLeft'
+                                    onClick={() => setActiveChatBot("purchase")}
+                                >
+                                    Purchase
+                                </button>
+                                <button
+                                    className='homeHelpYouButtonRight'
+                                    onClick={() => setActiveChatBot("refinance")}
+                                >
+                                    Refinance
+                                </button>
+                            </span>
+                        </>
+                    )}
 
-                            <span className="typingText">{currentText}</span>
-
+                    {/* Conditional Rendering for ChatBotPurchase */}
+                    {activeChatBot === "purchase" && (
+                        <span className='homeHelpYouChatBot'>
+                            <ChatBotPurchase />
                         </span>
-                    </span>
-                    <span className='homeHelpYouContent'>
-                        Whatever your goals are we are here to help! <br />Click our prequalifier to get started!</span>
-                    <span className='homeHelpYouButton'>
-                        <span className='homeHelpYouButtonLeft'>Purchase</span>
-                        <span className='homeHelpYouButtonRight'>Refinance</span>
-                    </span>
+                    )}
+
+                    {/* Conditional Rendering for ChatBotRefinance */}
+                    {activeChatBot === "refinance" && (
+                        <span className='homeHelpYouChatBot'>
+                            <ChatBotRefinance />
+                        </span>
+                    )}
                 </div>
             </div>
             <div className='welcomeBoxParent'>

@@ -372,7 +372,7 @@ body {
   justify-content: center;
   color: white;
   background-color: #00000080;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 3px black;
   /* position: fixed; */
   /* overflow: hidden; */
   z-index: 950;
@@ -407,6 +407,15 @@ body {
   padding-top: 50px;
 }
 
+.homeHelpYouChatBot {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 35px;
+  padding-top: 50px;
+}
+
 .homeHelpYouButtonLeft,
 .homeHelpYouButtonRight {
   padding: 15px 80px;
@@ -426,7 +435,175 @@ body {
   border: 1px solid white;
   border-radius: 0.1cm;
   cursor: pointer;
+  text-shadow: 1px 1px 1px black;
 }
+
+
+/******************************Home ChartBot-Start***********************************/
+
+.ChartBotBothBox {
+  width: 70%;
+  background-color: #00000080;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin: -115px 0px;
+  border-radius: 0.5cm;
+  box-shadow: 1px 1px 10px 0px gray;
+  position: relative;
+  left: 130px;
+}
+
+.ChartBotForm {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChartBotFormSpan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+}
+
+
+.ChartBotFormSpan label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.ChartBotFormSpan_PTag {
+  font-size: 14px;
+  margin-top: -12px;
+}
+
+.ChartBotFormSpan label {
+  display: flex;
+  gap: 15px;
+}
+
+.ChartBotFormSpan label input {
+  padding: 20px 20px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+}
+
+.ChartBotFormSpan label select {
+  padding: 20px 20px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.ChartBotFormSpan label input[type="range"] {
+  padding: 7px 0px;
+  width: 100%;
+  margin-top: -8px;
+}
+
+.ChartBotFormSpan label input[type="tel"],
+.ChartBotFormSpan label input[type="text"],
+.ChartBotFormSpan label input[type="email"] {
+  width: 100%;
+}
+
+.ChartBotFormSpan_Div {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.ChartBotFormSpan_Div label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #ff2f2f;
+  width: 70%;
+  padding: 20px;
+  gap: 5px;
+  border-radius: 0.15cm;
+  box-shadow: 1px 1px 5px 0px black;
+  cursor: pointer;
+}
+
+.ChartBotFormSpan_Div label:hover {
+  background-color: #ff4949;
+}
+
+
+.ChartBotForm_ContinueButton {
+  background-color: #ff2f2f;
+  padding: 15px 25px;
+  border-radius: 0.15cm;
+  box-shadow: 1px 1px 5px 0px black;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.ChartBotForm_ContinueButton:hover {
+  background-color: #ff4949;
+  text-decoration: underline;
+}
+
+
+.ChartBotForm_GoBack {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ChartBotForm_GoBack:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+
+
+.ri-check-double-line {
+  color: #06ff06;
+  font-size: 44px;
+  margin-top: -10px;
+}
+
+.ChartBotFormSpanThankYou_PTag {
+  font-size: 19px;
+  line-height: 22px;
+  margin-top: -10px;
+}
+
+
+
+.ChartBotFormSpan {
+  display: none;
+}
+
+.ChartBotFormSpan.active {
+  display: flex;
+}
+
+/******************************Home ChartBot-End***********************************/
+
 
 .welcomeBoxParent {
   width: 100%;
@@ -1454,11 +1631,12 @@ input[type="range"]::-moz-range-thumb {
   line-height: 22px;
 }
 
-.purchaseBottomLeftUL li span {
+.purchaseBottomLeftULLink {
+  text-decoration: none;
   color: red;
 }
 
-.purchaseBottomLeftUL li span:hover {
+.purchaseBottomLeftULLink:hover {
   text-decoration: underline;
   cursor: pointer;
 }

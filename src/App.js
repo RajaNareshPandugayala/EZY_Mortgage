@@ -28,6 +28,7 @@ import AdaAccessibilityStatement from './pages/adaAccessibilityStatement/ada-acc
 import PrivacyPolicyStatement from './pages/PrivacyStatement/privacy-policy';
 import TestimonialsReview from './pages/TestimonialReview/testimonials';
 import RightLoanForYou from './pages/WhichLoanIsRightForYou/which-loan-is-right-for-me';
+// import TeatingGmailFormPage from './pages/Form/ExampleGmailForm';
 
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
           <Route path="/which-loan-is-right-for-me" element={<RightLoanForYou />} />
           <Route path="/ada-accessibility-statement" element={<AdaAccessibilityStatement />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyStatement />} />
+
+          {/* <Route path="/test-mail-through-form" element={<TeatingGmailFormPage />} /> */}
+
         </Routes>
         <Footer />
       </BrowserRouter>
