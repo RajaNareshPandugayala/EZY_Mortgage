@@ -1,7 +1,7 @@
 import React from 'react'
 import housingIcon from '../../PicesForPages/equal-housing-opportunity-logo-100-w.png'
 import whatappIcon from '../../PicesForPages/WhatsappIcon.png'
-import Logo from '../../PicesForPages/LogoEZYmtg.png'
+import Logo from '../../PicesForPages/logoClient.jpg'
 import { Link } from 'react-router-dom'
 
 

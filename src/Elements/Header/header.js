@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Logo from '../../PicesForPages/ezgif.com-crop.gif';
+import Logo from '../../PicesForPages/logoClient.jpg';
 
 function Header() {
     return (

@@ -78,7 +78,7 @@ body {
 
 .headerLogo {
   width: 200px;
-  width: 185px;
+  width: 80px;
   cursor: pointer;
 }
 
@@ -193,6 +193,8 @@ body {
 
 .footerLogo {
   width: 80px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0px white;
 }
 
 .footerTop {
