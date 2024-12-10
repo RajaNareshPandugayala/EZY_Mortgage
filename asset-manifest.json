@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EZY_Mortgage/static/css/main.7e3d5a32.css",
-    "main.js": "/EZY_Mortgage/static/js/main.e5085487.js",
+    "main.css": "/EZY_Mortgage/static/css/main.37e8d0f5.css",
+    "main.js": "/EZY_Mortgage/static/js/main.c1f32d1c.js",
     "static/js/488.c4582472.chunk.js": "/EZY_Mortgage/static/js/488.c4582472.chunk.js",
     "static/media/Kids_Playing_in_park2.mp4": "/EZY_Mortgage/static/media/Kids_Playing_in_park2.f6d556702f158ab1c9a2.mp4",
     "static/media/PaperWorkNeeded.png": "/EZY_Mortgage/static/media/PaperWorkNeeded.c275bb895cb89afa2925.png",
@@ -48,12 +48,12 @@
     "static/media/house.png": "/EZY_Mortgage/static/media/house.0961ef66e894715a898e.png",
     "static/media/smartphone-7.png": "/EZY_Mortgage/static/media/smartphone-7.774383edbea700a3f098.png",
     "index.html": "/EZY_Mortgage/index.html",
-    "main.7e3d5a32.css.map": "/EZY_Mortgage/static/css/main.7e3d5a32.css.map",
-    "main.e5085487.js.map": "/EZY_Mortgage/static/js/main.e5085487.js.map",
+    "main.37e8d0f5.css.map": "/EZY_Mortgage/static/css/main.37e8d0f5.css.map",
+    "main.c1f32d1c.js.map": "/EZY_Mortgage/static/js/main.c1f32d1c.js.map",
     "488.c4582472.chunk.js.map": "/EZY_Mortgage/static/js/488.c4582472.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e3d5a32.css",
-    "static/js/main.e5085487.js"
+    "static/css/main.37e8d0f5.css",
+    "static/js/main.c1f32d1c.js"
   ]
 }
